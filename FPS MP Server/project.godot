@@ -1,0 +1,127 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "KinematicBody",
+"class": "BasePlayer",
+"language": "GDScript",
+"path": "res://scripts/player/base_player.gd"
+}, {
+"base": "Spatial",
+"class": "BaseWeapon",
+"language": "GDScript",
+"path": "res://scripts/player/weapons/base_weapon.gd"
+}, {
+"base": "BaseWeapon",
+"class": "Boomstick",
+"language": "GDScript",
+"path": "res://scripts/player/weapons/boomstick.gd"
+}, {
+"base": "BasePlayer",
+"class": "Bot",
+"language": "GDScript",
+"path": "res://scripts/player/bot.gd"
+}, {
+"base": "BaseWeapon",
+"class": "Grabbity",
+"language": "GDScript",
+"path": "res://scripts/player/weapons/grabbity.gd"
+}, {
+"base": "BasePlayer",
+"class": "Player",
+"language": "GDScript",
+"path": "res://scripts/player/player.gd"
+}, {
+"base": "RigidBody",
+"class": "Prop",
+"language": "GDScript",
+"path": "res://scripts/props/prop.gd"
+}, {
+"base": "Spatial",
+"class": "Room",
+"language": "GDScript",
+"path": "res://scripts/rooms/room.gd"
+}, {
+"base": "Room",
+"class": "RoomEnd",
+"language": "GDScript",
+"path": "res://scripts/rooms/room_end.gd"
+}, {
+"base": "Room",
+"class": "RoomStart",
+"language": "GDScript",
+"path": "res://scripts/rooms/room_start.gd"
+}, {
+"base": "Navigation",
+"class": "RoomsGenerator",
+"language": "GDScript",
+"path": "res://scripts/rooms/generator.gd"
+}, {
+"base": "BaseWeapon",
+"class": "SMG",
+"language": "GDScript",
+"path": "res://scripts/player/weapons/smg.gd"
+}, {
+"base": "Spatial",
+"class": "Seal",
+"language": "GDScript",
+"path": "res://scripts/rooms/seal.gd"
+}, {
+"base": "Node",
+"class": "StackFSM",
+"language": "GDScript",
+"path": "res://scripts/player/stack_fsm.gd"
+} ]
+_global_script_class_icons={
+"BasePlayer": "",
+"BaseWeapon": "",
+"Boomstick": "",
+"Bot": "",
+"Grabbity": "",
+"Player": "",
+"Prop": "",
+"Room": "",
+"RoomEnd": "",
+"RoomStart": "",
+"RoomsGenerator": "",
+"SMG": "",
+"Seal": "",
+"StackFSM": ""
+}
+
+[application]
+
+config/name="FPS MP Server"
+run/main_scene="res://scenes/main.tscn"
+config/icon="res://icon.png"
+
+[autoload]
+
+utils="*res://scripts/utils.gd"
+preloader="*res://scripts/preloader.gd"
+game="*res://scripts/game.gd"
+
+[display]
+
+window/size/width=640
+window/size/height=360
+window/size/resizable=false
+
+[node]
+
+name_num_separator=2
+name_casing=2
+
+[rendering]
+
+quality/driver/driver_name="GLES2"
+vram_compression/import_etc=true
+vram_compression/import_etc2=false
+environment/default_environment="res://default_env.tres"

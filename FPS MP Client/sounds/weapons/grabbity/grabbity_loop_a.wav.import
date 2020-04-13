@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/grabbity_loop_a.wav-f574693f1778d6c98d8c194bf072e25b.sample"
+
+[deps]
+
+source_file="res://sounds/weapons/grabbity/grabbity_loop_a.wav"
+dest_files=[ "res://.import/grabbity_loop_a.wav-f574693f1778d6c98d8c194bf072e25b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0
